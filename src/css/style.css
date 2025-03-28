@@ -196,7 +196,69 @@ header {
         right: 0;
     }
 
+    .card {
+        width: 100%;
+        height: 200px;
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: box-shadow 0.3s ease;
+        border: 1px transparent solid;
+    }
 
+    .card:hover {
+        border: 1px solid black;
+    }
+
+    .card-1:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .card-1 img {
+        transition: transform 0.3s ease;
+    }
+
+    .card-1:hover img {
+        animation: rotateImage .5s infinite alternate ease-in-out;
+    }
+
+    .card-2:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .card-2 img {
+        transition: transform 0.3s ease;
+    }
+
+    .card-2:hover img {
+        animation: rotateImage2 .5s infinite alternate ease-in-out;
+    }
+
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes rotateImage2 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
 
 /* end about , about-2 */
@@ -210,10 +272,34 @@ header {
         margin: 0;
     }
 
+    .main-card {
+        border: 1px solid transparent;
+        transition: .3s;
+    }
+
+    .main-card:hover {
+        border: 1px solid black;
+        transition: .3s;
+    }
+
+    .card-bg:hover{
+        background-color: var(--primary);
+        color: var(--white);
+
+    }
+
     .icon-img {
         width: 50px;
         height: 50px;
         object-fit: contain;
+    }
+
+    .hover-card img {
+        transition: transform 0.3s ease;
+    }
+
+    .hover-card:hover img {
+        animation: rotateImage .5s infinite alternate ease-in-out;
     }
 }
 
@@ -244,6 +330,11 @@ header {
     h3 {
         direction: rtl;
         text-align: start;
+    }
+
+    .card-bg:hover{
+        background-color: var(--blue);
+        color: var(--white);
     }
 }
 
@@ -280,6 +371,10 @@ footer {
         width: 100px;
         height: 100px;
         object-fit: contain;
+    }
+
+    li:hover{
+        color: var(--blue);
     }
 }
 
