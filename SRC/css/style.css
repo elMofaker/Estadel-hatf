@@ -340,7 +340,7 @@ header {
 
 /* end msq */
 footer {
-    background-image: url(../../public/img-footer.svg);
+    background-image: url(../../publics/img-footer.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
